@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Load the image
-img = cv.imread(r"C:\Users\User\Pictures\Untitled.png")
+img = cv.imread(r"E:\Mobile Doc\Cat 2021\IMG_3894.jpg")
 
 # Check if the image is loaded properly
 if img is None:
@@ -16,7 +16,7 @@ else:
     rows, cols = img_gray.shape
 
     # Define border thickness
-    border_thickness = 10 # Change this value for a thicker or thinner border
+    border_thickness = 50 # Change this value for a thicker or thinner border
 
     # Extract the border pixel values (top row, bottom row, left column, right column)
     top_row = img_gray[0, :]

@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Load the image
-img = cv.imread(r"C:\Users\User\Pictures\Untitled.png")
+img = cv.imread(r"E:\Mobile Doc\Cat 2021\IMG_3894.jpg")
 
 # Check if the image is loaded properly
 if img is None:
@@ -30,27 +30,27 @@ else:
     # Display all images in one figure
     plt.figure(figsize=(12, 12))
 
-    plt.subplot(5, 2, 1)
+    plt.subplot(4, 2, 1)
     plt.imshow(cv.cvtColor(top_left, cv.COLOR_BGR2RGB))
     plt.title('Top Left')
     plt.axis('off')
 
-    plt.subplot(5, 2, 2)
+    plt.subplot(4, 2, 2)
     plt.imshow(cv.cvtColor(top_right, cv.COLOR_BGR2RGB))
     plt.title('Top Right')
     plt.axis('off')
 
-    plt.subplot(5, 2, 3)
+    plt.subplot(4, 2, 3)
     plt.imshow(cv.cvtColor(bottom_left, cv.COLOR_BGR2RGB))
     plt.title('Bottom Left')
     plt.axis('off')
 
-    plt.subplot(5, 2, 4)
+    plt.subplot(4, 2, 4)
     plt.imshow(cv.cvtColor(bottom_right, cv.COLOR_BGR2RGB))
     plt.title('Bottom Right')
     plt.axis('off')
 
-    plt.subplot(5, 2, 5)
+    plt.subplot(4, 2, 5)
     plt.imshow(cv.cvtColor(merged_image, cv.COLOR_BGR2RGB))
     plt.title('Merged Image (Original)')
     plt.axis('off')

@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Load the image
-img = cv.imread(r"C:\Users\User\Pictures\Untitled.png")
+img = cv.imread(r"E:\Mobile Doc\Cat 2021\IMG_3894.jpg")
 
 # Check if the image is loaded properly
 if img is None:
